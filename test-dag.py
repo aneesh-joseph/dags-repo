@@ -22,6 +22,6 @@ dag = DAG('test-dag', default_args=common_task_args, is_paused_upon_creation=Tru
 
 test = BashOperator(
     task_id='hello_task',
-    bash_command='echo hello',
+    bash_command='echo hello;sleep 60;echo done',
     dag=dag
 )
