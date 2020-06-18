@@ -7,10 +7,6 @@ from datetime import datetime, timedelta
 executor_config = {
     "KubernetesExecutor": {
         "image": "apache/airflow:1.10.10.1-alpha2-python3.6",
-        "request_memory": "512Mi",
-        "request_cpu": "1000m",
-        "limit_memory": "512Mi",
-        "limit_cpu": "1000m"
     }
 }
 
